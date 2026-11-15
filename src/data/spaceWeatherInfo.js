@@ -1,0 +1,11 @@
+export const SW = {
+  FLR: { label: 'Solar flare', plural: 'Solar Flares', color: '#fbbf24', icon: 'Sun', explain: 'A solar flare is a sudden burst of electromagnetic radiation from the Sun. Flares are classed A, B, C, M or X, with X the strongest.', relevance: 'Solar flares can affect communications and other space systems. Follow your mission communications procedures if links are affected.' },
+  CME: { label: 'Coronal mass ejection', plural: 'Coronal Mass Ejections', color: '#f87171', icon: 'Waves', explain: 'A coronal mass ejection (CME) is a large cloud of solar material and magnetic field thrown out by the Sun. If one reaches Earth it can disturb Earth’s magnetic field.', relevance: 'CMEs release large amounts of solar material and may contribute to geomagnetic disturbances. Mission teams track them as part of space weather awareness.' },
+  SEP: { label: 'Solar energetic particle event', plural: 'Solar Energetic Particle Events', color: '#a78bfa', icon: 'Radiation', explain: 'A solar energetic particle (SEP) event is a burst of fast-moving charged particles from the Sun, often linked to flares and CME shocks.', relevance: 'Energetic solar particles are relevant to radiation exposure monitoring. Consult your mission-approved radiation monitoring procedures.' },
+  GST: { label: 'Geomagnetic storm', plural: 'Geomagnetic Storms', color: '#22d3ee', icon: 'Magnet', explain: 'A geomagnetic storm is a disturbance of Earth’s magnetosphere, usually after solar wind or a CME interacts with it. Kp is a 0 to 9 index of geomagnetic activity.', relevance: 'Geomagnetic storms are disturbances in Earth’s magnetosphere and can affect space systems. Follow mission guidance.' },
+}
+export const TYPES = Object.keys(SW)
+export const SOURCE = 'NASA DONKI – Space Weather Database of Notifications, Knowledge, Information'
+export const DONKI_URL = 'https://ccmc.gsfc.nasa.gov/DONKI/'
+export const DISCLAIMER = 'NASA DONKI provides space-weather information. It does not directly measure an astronaut’s personal radiation exposure or provide an individual medical diagnosis. Mission-specific monitoring and response procedures must be followed.'
+export const fmtUTC = (t) => (t && !Number.isNaN(Date.parse(t)) ? new Date(t).toLocaleString('en-GB', { timeZone: 'UTC', dateStyle: 'medium', timeStyle: 'short' }) + ' UTC' : 'Not available')

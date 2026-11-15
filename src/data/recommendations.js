@@ -1,0 +1,9 @@
+export const RECS = [
+  { id: 'r1', cat: 'Physical activity', title: 'Complete your scheduled exercise session', why: 'Regular exercise helps counter muscle and cardiovascular deconditioning.', sys: 'Heart & cardiovascular system', hz: 'Microgravity', act: 'Follow your mission-approved exercise plan today.' },
+  { id: 'r2', cat: 'Sleep and recovery', title: 'Keep a consistent sleep routine', why: 'Sleep supports alertness, mood and recovery.', sys: 'Brain & nervous system', hz: 'Isolation and confinement', act: 'Follow your mission sleep schedule and record sleep duration.' },
+  { id: 'r3', cat: 'Nutrition and hydration', title: 'Log food and fluid intake', why: 'Intake affects energy, bone health and fluid balance.', sys: 'Digestive system', hz: 'Microgravity', act: 'Record meals and fluids as your nutrition plan directs.' },
+  { id: 'r4', cat: 'Stress management', title: 'Take a short relaxation break', why: 'Regular breaks help manage the strain of confinement.', sys: 'Brain & nervous system', hz: 'Isolation and confinement', act: 'Use a mission-approved relaxation or contact-with-home activity.' },
+  { id: 'r5', cat: 'Bone and muscle health', title: 'Do your resistive exercise', why: 'Resistive loading helps protect bone and muscle.', sys: 'Bones & skeleton', hz: 'Microgravity', act: 'Complete the resistive session in your plan.' },
+  { id: 'r6', cat: 'Cardiovascular health', title: 'Record resting heart rate and blood pressure', why: 'Consistent readings make changes easier to spot.', sys: 'Heart & cardiovascular system', hz: 'Altered gravity', act: 'Measure after 5 minutes of rest at a consistent time.' },
+  { id: 'r7', cat: 'General health monitoring', title: 'Submit today’s health assessment', why: 'Regular records give you and the flight surgeon a clear trend.', sys: 'All systems', hz: 'Distance from Earth', act: 'Open Health Assessment and save a record.' },
+]
